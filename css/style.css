@@ -11,6 +11,7 @@
   --black-color: hsl(0, 0%, 0%);
   --black-color-light: hsl(0, 0%, 40%);
   --white-color: hsl(0, 0%, 95%);
+  --white-color-light: hsl(0, 0%, 55%);
   --title-color: hsl(0, 0%, 0%);
   --text-color: hsl(0, 0%, 35%);
   --text-color-light: hsl(0, 0%, 64%);
@@ -137,6 +138,10 @@ body.dark-theme{
 
 .dark-theme :is(.button__ghost, .button__ghost i, .services__icon i){
     color: var(--white-color);
+}
+
+.dark-theme :is(.button__ghost:hover){
+    color: var(--white-color-light);
 }
 
 .dark-theme .projects__card:hover{
